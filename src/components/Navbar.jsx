@@ -2,6 +2,7 @@ import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
@@ -64,11 +65,11 @@ const Navbar = () => {
         <Left>
           <Language> EN </Language>
           <SearchContainer>
-            <Input />
+            <Input placeholder="search" />
             <Search style={{color:"grey", fontsize: 16}} />
           </SearchContainer>
         </Left>
-        <Center><Logo> LAMA </Logo></Center>
+        <Center><Logo> KEV </Logo></Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
