@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+ECOMMERCEAPI/node_modules
+ECOMMERCEAPI/.env
 
 # testing
 /coverage
