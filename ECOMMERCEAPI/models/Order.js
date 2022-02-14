@@ -18,7 +18,7 @@ const OrderSchema = new mongoose.Schema(
     address: { type: Object, required: true }, // stripe payment send objects
     status: { type: String, default: "pending" },
   },
-  { timesamps: true }
+  { timestamps: true }
 );
 
 module.exports = mongoose.model("Order", OrderSchema);

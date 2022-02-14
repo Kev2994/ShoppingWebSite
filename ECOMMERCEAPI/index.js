@@ -4,6 +4,8 @@ const dotenv = require("dotenv");
 const userRoute = require("./routes/user");
 const authRoute = require("./routes/auth");
 const productRoute = require("./routes/product");
+const orderRoute = require("./routes/order");
+const cartROute = require("./routes/cart");
 
 const mongoose = require("mongoose");
 const { application } = require("express");
@@ -19,6 +21,8 @@ app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/user", userRoute);
 app.use("/api/products", productRoute);
+app.use("/api/carts", cartROute);
+app.use("/api/orders", orderRoute);
 
 const port = process.env.PORT || 5000;
 
